@@ -4,21 +4,56 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Font awesome -->
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- /Bootstrap CSS -->
         <title>Treno Boolean</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <!-- Header -->
-        <header>
+        <header class="wrapper">
             <h1>Treno Boolean</h1>
         </header>
         <!-- Header -->
 
         <!-- Main -->
         <main>
-            
+            <div class="container align-items-center">
+                <div class="row text-center">
+                    <div class="col-12 col-md-6">
+                        <label for="distanzaKm">KM: </label>
+                        <input type="text" name="distanzaKm" id="distanzaKm">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="eta">ETA': </label>
+                        <input type="text" name="eta" id="eta">
+                    </div>
+                    <div class="col-12">
+                        <button class="btn_prezzo" onclick="calcoloPrezzo()">CALCOLA PREZZO</button>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="box">
+                            <p id="distanzaKmP">Chilometri da percorrere: </p>
+                            <p id="etaP">Età passeggero: </p>
+                            <p>Prezzo a chilometro: 0.21€</p>
+                            <p id="sconto">Sconto applicato: </p>
+                            <p id="prezzo">Prezzo biglietto: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- Main -->
+
+        <!-- Footer -->
+        <footer class="wrapper">
+            <p>Copyright<sup><i class="far fa-copyright"></i></sup> by Boolean 2021</p>
+        </footer>
+        <!-- /Footer -->
 
 
         <!-- Script JS -->
