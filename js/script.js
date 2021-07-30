@@ -1,9 +1,9 @@
 function calcoloPrezzo() {
     // 1. Richiesta distanza tragitto
-    var distanzaKm = document.getElementById("distanzaKm").value;
+    var distanzaKm = parseInt(document.getElementById("distanzaKm").value);
     document.getElementById('distanzaKmP').innerHTML = distanzaKm;
     // 2. Richiesta età passegero
-    var eta = document.getElementById("eta").value;
+    var eta = parseInt(document.getElementById("eta").value);
     document.getElementById('etaP').innerHTML = eta;
     // 3. Calcolo del prezzo del biglietto 
     var prezzo = distanzaKm * 0.21;
