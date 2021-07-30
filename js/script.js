@@ -8,10 +8,10 @@ function calcoloPrezzo() {
     // 3. Calcolo del prezzo del biglietto 
     var prezzo = distanzaKm * 0.21;
     if (eta < 18) {
-        var prezzo = prezzo - (prezzo * 0.2);
+        prezzo -= (prezzo * 0.2);
         document.getElementById('sconto').innerHTML = "Sconto del 20% per i minori di 18 anni";
     } else if (eta > 65) {
-        var prezzo = prezzo - (prezzo * 0.4);
+        prezzo -= (prezzo * 0.4);
         document.getElementById('sconto').innerHTML = "Sconto del 40% per le persone sopra i 65 anni";
     } else {
         document.getElementById('sconto').innerHTML = "Nessuno sconto applicato";
