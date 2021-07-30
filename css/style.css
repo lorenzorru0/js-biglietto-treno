@@ -21,6 +21,9 @@ h1, p {
     text-align: center;
     color: #fff;
 }
+h2 {
+    color: red;
+}
 
 /* Header */
 header {
